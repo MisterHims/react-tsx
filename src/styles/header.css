@@ -67,6 +67,14 @@ header .header-items .header-bar-notification {
     margin-left: 0.75rem;
 }
 
+header .header-items .header-submenu {
+    display: flex;
+}
+
+header .header-items .header-submenu > div {
+    margin-left: 1rem;
+}
+
 header .header-items .header-quick-access {
     display: flex;
     align-items: center;
@@ -91,16 +99,20 @@ header .header-items .header-quick-access .header-tools {
     align-items: center;
     padding-left: 1.5rem;
     margin-left: 1.5rem;
-    --tw-border-opacity: 1;
-    border-color: blue;
+    border-color: #dee0e9;
     border-left-width: 1px;
 }
 
-header .header-items .header-quick-access .header-tools .dark {
-    background-color: red;
+header .header-items .header-quick-access .header-tools .header-github-access {
+    display: block;
+    margin-left: 1.5rem;
 }
 
 /* DarkMode Initialization */
+
+.dark .App a {
+    color: #fff;
+}
 
 .dark .header-wrapper {
     background-color: transparent;

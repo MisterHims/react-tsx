@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-function getDefaultMode() {
-  // Check user preferences
-  const prefersDarkMode =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const savedMode = localStorage.getItem("mode");
+localStorage.clear();
 
-  if (savedMode) {
-    return savedMode;
-  } else if (prefersDarkMode) {
-    return "dark";
-  } else {
-    return "light";
-  }
+function getDefaultMode() {
+  const savedMode = localStorage.getItem("mode");
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  return savedMode ? savedMode : prefersDark ? "dark" : "light";
 }
 
 const DarkModeButton = () => {
@@ -36,7 +28,7 @@ const DarkModeButton = () => {
     setMode(mode === "dark" ? "light" : "dark");
   };
     return (
-      <button className="mode-switch" onClick={toggleMode}>
+      <button className="mode-switch" type="button" title="Switch theme" onClick={toggleMode}>
         <span className="dark:hidden">
           <svg
             viewBox="0 0 24 24"

@@ -4,6 +4,12 @@ tandis que le fichier App.css peut être utilisé pour des styles spécifiques �
 l'interface utilisateur de l' application, tels que des styles de disposition,
 de marges et de rembourrages. */
 
+body a {
+  font-weight: 500;
+  text-decoration: inherit;
+  color: #000;
+}
+
 #root {width: 100%;}
 
 .MainWrapper {
@@ -68,3 +74,7 @@ footer {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42/var(--tw-bg-opacity));
 }
+
+.dark nav a {color: #fff;}
+
+.dark .header-items button {color: #fff;}

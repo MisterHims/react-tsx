@@ -10,12 +10,6 @@ de marges et de rembourrages. */
 @tailwind components;
 @tailwind utilities;
 
-a {
-  font-weight: 500;
-  text-decoration: inherit;
-  color: #000;
-}
-
 body {
   font-family: Inter,
     system-ui,
@@ -33,16 +27,4 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-@media (prefers-color-scheme: dark) {
-  a {
-    color: #fff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
