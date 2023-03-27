@@ -1,0 +1,44 @@
+#root {
+
+    /* Generic Theme Colors */
+
+    --bg-plain-primary-color: #fff;
+    --bg-light-primary-color: #f1f3f4;
+
+    --bg-plain-secondary-color: #f2f2f2;
+
+    --basic-toned-color: #308dfc;
+
+    --bg-plain-toned-color: #0b57d0;
+    --bg-light-toned-color: #24334d;
+
+    --dark-primary-color: #a9acaa;
+
+    --font-plain-primary-color: #444746;
+    --font-plain-toned-color: #0842a0;
+
+}
+
+[data-theme="dark"] {
+    /* Dark Theme Colors */
+    --bg-plain-primary-color: #1f1f1f;
+    --bg-light-primary-color: #303030;
+
+    --bg-plain-toned-color: #4285f4;
+    --bg-light-toned-color: #1c283b;
+
+    --font-plain-primary-color: #444746;
+    --font-plain-toned-color: #a8c7fa;
+
+}
+
+/* Mouse Color Selection */
+::selection {
+    color: var(--bg-plain-primary-color);
+    background: var(--basic-toned-color);
+}
+
+::-moz-selection {
+    color: var(--bg-plain-primary-color);
+    background: var(--basic-toned-color);
+}

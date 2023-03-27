@@ -1,0 +1,117 @@
+header .header-background {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+header .header-background div {
+    width: 108rem;
+    flex: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .header-wrapper {
+    flex: none;
+    width: 100%;
+    z-index: 40;
+    top: 0;
+    position: sticky;
+    --tw-backdrop-blur: blur(8px);
+    background-color: hsla(0, 0%, 100%, .6);
+    border-color: rgba(15, 23, 42, .1);
+    border-bottom-width: 1px;
+}
+
+
+header .header-content {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .header-items {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header .header-items .header-bar-logotype {
+    flex: none;
+    margin-right: .75rem;
+    overflow: hidden;
+}
+
+header .header-items .header-bar-notification {
+    display: flex;
+    --tw-text-opacity: 1;
+    color: rgb(2 132 199/var(--tw-text-opacity));
+    line-height: 1.25rem;
+    font-weight: 500;
+    font-size: .75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background-color: rgba(56, 189, 248, .1);
+    border-radius: 9999px;
+    align-items: center;
+    margin-left: 0.75rem;
+}
+
+header .header-items .header-quick-access {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+header .header-items .header-quick-access nav {
+    --tw-text-opacity: 1;
+    color: rgb(51 65 85/var(--tw-text-opacity));
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header .header-items .header-quick-access .header-tools {
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    --tw-border-opacity: 1;
+    border-color: blue;
+    border-left-width: 1px;
+}
+
+header .header-items .header-quick-access .header-tools .dark {
+    background-color: red;
+}
+
+/* DarkMode Initialization */
+
+.dark .header-wrapper {
+    background-color: transparent;
+    border-color: rgba(248, 250, 252, .06);
+}
+
+.dark header .header-items .header-bar-notification {
+    --tw-text-opacity: 1;
+    color: rgb(56 189 248/var(--tw-text-opacity));
+}
+
+.dark header nav ul {
+    --tw-text-opacity: 1;
+}

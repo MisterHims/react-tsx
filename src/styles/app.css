@@ -1,0 +1,70 @@
+/* Le fichier index.css est souvent utilisé pour des styles globaux
+tels que la définition des couleurs, des polices, des tailles de police, etc.,
+tandis que le fichier App.css peut être utilisé pour des styles spécifiques à
+l'interface utilisateur de l' application, tels que des styles de disposition,
+de marges et de rembourrages. */
+
+#root {width: 100%;}
+
+.MainWrapper {
+  background-color: var(--bg-plain-primary-color);
+  min-height: 100vh;
+}
+
+footer {
+  padding: 1rem 0;
+
+}
+
+.footer-links {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0 4rem 0 5rem;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.article-page {
+  margin: 2.625rem 0 0;
+  border: 1px solid var(--dark-primary-color);
+  border-radius: 0.5rem;
+}
+
+.Home {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  padding: 40px 30px;
+}
+
+.mode-switch {
+  font-size: 11px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.mode-switch:hover {
+  color: #50bbf1;
+}
+
+.primary-button {
+  /* default style: black button with white text */
+  background-color: #222;
+  color: #f5f5f5;
+}
+
+/* DarkMode Initialization */
+
+.dark .MainWrapper {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184/var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42/var(--tw-bg-opacity));
+}
