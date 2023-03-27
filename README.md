@@ -8,11 +8,11 @@ Here is the list of all the dependencies and frameworks used with this environme
 - React-Dom
 - React-Router-Dom
 - PostCSS
-- Autoprefix
+- Autoprefixer
 - Material-UI (@mui/material, @mui/base and @mui/joy)
 - Emotion (@emotion/react and @emotion/styled)
 - TailwindCSS
-- TailwindCSS | Just-In-Time
+- Flowbite
 
 ## Base Installation
 
