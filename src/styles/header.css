@@ -17,6 +17,19 @@ header .header-background div {
     justify-content: flex-end;
 }
 
+header .header-background div img.light-version {
+    flex: none;
+    width: 71.75rem;
+    max-width: none;
+}
+
+header .header-background div img.dark-version {
+    flex: none;
+    display: none;
+    width: 90rem;
+    max-width: none;
+}
+
 header .header-wrapper {
     flex: none;
     width: 100%;
@@ -34,20 +47,26 @@ header .header-content {
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem 2rem;
+    height: 4rem;
 }
 
 header .header-items {
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 100%;
 }
 
 header .header-items .header-bar-logotype {
     flex: none;
     margin-right: .75rem;
     overflow: hidden;
+}
+
+header .header-items .header-bar-logotype svg.logo {
+    width: auto;
+    height: 2rem;
 }
 
 header .header-items .header-bar-notification {
@@ -67,12 +86,13 @@ header .header-items .header-bar-notification {
     margin-left: 0.75rem;
 }
 
-header .header-items .header-submenu {
-    display: flex;
+header .header-items .header-bar-notification .dot-separator {
+    margin-left: 0.5rem;
 }
 
-header .header-items .header-submenu > div {
-    margin-left: 1rem;
+header .header-items .header-bar-notification .arrow-cta {
+    margin-left: 0.75rem;
+    overflow: visible;
 }
 
 header .header-items .header-quick-access {
@@ -80,6 +100,10 @@ header .header-items .header-quick-access {
     align-items: center;
     margin-left: auto;
     position: relative;
+}
+
+header .header-items .header-quick-access a {
+    color: #334155;
 }
 
 header .header-items .header-quick-access nav {
@@ -99,19 +123,24 @@ header .header-items .header-quick-access .header-tools {
     align-items: center;
     padding-left: 1.5rem;
     margin-left: 1.5rem;
-    border-color: #dee0e9;
+    border-color: rgba(15, 23, 42, .1) /* rgba(248, 250, 252, .06)*/;
     border-left-width: 1px;
 }
 
-header .header-items .header-quick-access .header-tools .header-github-access {
+header .header-items .header-quick-access .header-tools .github-button {
     display: block;
     margin-left: 1.5rem;
 }
 
+
 /* DarkMode Initialization */
 
-.dark .App a {
-    color: #fff;
+.dark .header-background div img.light-version {
+    display: none;
+}
+
+.dark .header-background div img.dark-version {
+    display: block;
 }
 
 .dark .header-wrapper {
@@ -124,6 +153,26 @@ header .header-items .header-quick-access .header-tools .header-github-access {
     color: rgb(56 189 248/var(--tw-text-opacity));
 }
 
-.dark header nav ul {
-    --tw-text-opacity: 1;
+.dark header .header-items .header-quick-access a {
+    color: #fff;
+}
+
+.dark header .header-items .header-quick-access a:hover {
+    color: #38bdf8;
+}
+
+.dark header .header-items .header-quick-access .header-tools {
+    border-color: rgba(248, 250, 252, .06);
+}
+
+.dark header .header-items .header-quick-access a.github-button:hover {
+    color: #cbd5e1;
+}
+
+.dark .header-items button {
+    color: #fff;
+}
+
+.dark .header-items button:hover {
+    color: #0f182b
 }

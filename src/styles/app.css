@@ -4,40 +4,45 @@ tandis que le fichier App.css peut être utilisé pour des styles spécifiques �
 l'interface utilisateur de l' application, tels que des styles de disposition,
 de marges et de rembourrages. */
 
-body a {
+
+#root {width: 100%;}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.App {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-plain-primary-color);
+  min-height: 100vh;
+}
+
+a:hover {
+  color: #0ea5e9;
+}
+
+/* Full Content */
+
+.main-wrapper .full-content {
+  width: 90rem/* 1440px */;
+}
+
+/* Article Content */
+
+.main-wrapper .article-content {
+  width: 72rem/* 1152px */;
+  padding-left: 2rem;
+}
+
+.article-content a {
   font-weight: 500;
   text-decoration: inherit;
   color: #000;
 }
 
-#root {width: 100%;}
-
-.MainWrapper {
-  background-color: var(--bg-plain-primary-color);
-  min-height: 100vh;
-}
-
-footer {
-  padding: 1rem 0;
-
-}
-
-.footer-links {
-  font-weight: 300;
-  font-style: italic;
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 0 4rem 0 5rem;
-}
-
-.main-content {
-  padding: 2rem;
-}
-
-.article-page {
-  margin: 2.625rem 0 0;
-  border: 1px solid var(--dark-primary-color);
-  border-radius: 0.5rem;
+.article-content a:hover {
+  color: #64748b;
 }
 
 .Home {
@@ -68,13 +73,21 @@ footer {
 
 /* DarkMode Initialization */
 
-.dark .MainWrapper {
+.dark a:hover {
+  color: #38bdf8;
+}
+
+.dark .article-content a {
+  color: #fff;
+}
+
+.dark .article-content a:hover {
+  color: #64748b
+}
+
+.dark .App {
   --tw-text-opacity: 1;
   color: rgb(148 163 184/var(--tw-text-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42/var(--tw-bg-opacity));
 }
-
-.dark nav a {color: #fff;}
-
-.dark .header-items button {color: #fff;}

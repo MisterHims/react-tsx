@@ -9,22 +9,3 @@ de marges et de rembourrages. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  font-family: Inter,
-    system-ui,
-    Avenir,
-    Helvetica,
-    Arial,
-    sans-serif;
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
