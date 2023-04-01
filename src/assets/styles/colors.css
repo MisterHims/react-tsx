@@ -83,11 +83,11 @@ html {
 
 /* Mouse Color Selection */
 ::selection {
-    color: var(--bg-plain-primary-color);
-    background: var(--basic-tonic-color);
+    color: rgba(var(--primary-color-light), 1);
+    background: rgba(var(--blue-color-800), 1);
 }
 
 ::-moz-selection {
-    color: var(--bg-plain-primary-color);
-    background: var(--basic-tonic-color);
+    color: rgba(var(--primary-color-light), 1);
+    background: rgba(var(--blue-color-800), 1);
 }
