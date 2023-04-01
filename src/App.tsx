@@ -12,6 +12,8 @@ import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./components/routes/Mai
 import "./assets/styles/app.css";
 import "./assets/styles/colors.css";
 
+import { Global, css } from '@emotion/react';
+
 // Import Animated Background
 import ParticlesBackground from "./components/animated-backgrounds/ParticlesBackground";
 
@@ -19,6 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
+      <Global styles={css` body { background-color: transparent; } `} />
       <div className="App">
         <MainRoutes />
         <DocsRoutes />

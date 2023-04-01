@@ -20,7 +20,7 @@ header .header-wrapper.template-home .header-content {
 }
 
 header .header-wrapper.template-article {
-    border-color: rgba(15, 23, 42, .1);
+    border-color: rgba(var(--primary-color-dark), .1);
     border-bottom-width: 1px;
 }
 
@@ -47,13 +47,12 @@ header .header-items .header-bar-logotype {
 header .header-items .header-bar-logotype svg.logo {
     width: auto;
     height: 2rem;
-    color: rgb(15 23 42);
+    color: rgba(var(--primary-color-dark), 1);
 }
 
 header .header-items .header-bar-notification {
     display: flex;
-    --tw-text-opacity: 1;
-    color: rgb(2 132 199/var(--tw-text-opacity));
+    color: rgba(var(--blue-color-900), .9);
     line-height: 1.25rem;
     font-weight: 500;
     font-size: .75rem;
@@ -61,7 +60,7 @@ header .header-items .header-bar-notification {
     padding-bottom: 0.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
-    background-color: rgba(56, 189, 248, .1);
+    background-color: rgba(var(--blue-color-500), .1);
     border-radius: 9999px;
     align-items: center;
     margin-left: 0.75rem;
@@ -72,7 +71,7 @@ header .header-items .header-bar-notification span {
 }
 
 header .header-items .header-bar-notification svg {
-    color: rgb(2 132 199);
+    color: rgba(var(--blue-color-500), 1);
 }
 
 header .header-items .header-bar-notification svg.dot-separator {
@@ -99,12 +98,15 @@ header .header-items .header-quick-access {
 }
 
 header .header-items .header-quick-access a {
-    color: #334155;
+    color: rgba(var(--primary-color-800), 1);
+}
+
+header .header-items .header-quick-access a:hover {
+    color: rgba(var(--blue-color-800), 1);
 }
 
 header .header-items .header-quick-access nav {
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    color: rgba(var(--primary-color-300), 1);
     font-size: .875rem;
     font-weight: 600;
     line-height: 1.5rem;
@@ -123,13 +125,18 @@ header .header-items .header-quick-access .header-tools {
     align-items: center;
     padding-left: 1.5rem;
     margin-left: 1.5rem;
-    border-color: rgba(15, 23, 42, .1) /* rgba(248, 250, 252, .06)*/;
+    border-color: rgba(var(--primary-color-dark), .1);
     border-left-width: 1px;
 }
 
-header .header-items .header-quick-access .header-tools .github-button {
+header .header-items .header-quick-access a.github-button {
     display: block;
     margin-left: 1.5rem;
+    color: rgba(var(--primary-color-700), 1);
+}
+
+header .header-items .header-quick-access a.github-button:hover {
+    color: rgba(var(--primary-color-500), 1);
 }
 
 /* HEADER BACKGROUND */
@@ -178,7 +185,7 @@ header .header-background div img.dark-version {
 
 .dark header .header-wrapper {
     background-color: transparent;
-    border-color: rgba(248, 250, 252, .06);
+    border-color: rgba(var(--primary-color-300), .6);
     border-bottom-width: 1px;
 }
 
@@ -188,38 +195,29 @@ header .header-background div img.dark-version {
 }
 
 .dark header .header-items .header-bar-logotype svg.logo {
-    color: #fff;
+    color: rgba(var(--primary-color-light), 1)
 }
 
 .dark header .header-items .header-bar-notification {
-    --tw-text-opacity: 1;
-    color: rgb(56 189 248/var(--tw-text-opacity));
+    color: rgba(var(--blue-color-500), 1)
 }
 
 .dark header .header-items .header-bar-notification svg {
-    color: rgb(56 189 248);
+    color: rgba(var(--blue-color-300), 1);
 }
 
 .dark header .header-items .header-quick-access a {
-    color: #fff;
+    color: rgba(var(--primary-color-light), 1);
 }
 
 .dark header .header-items .header-quick-access a:hover {
-    color: #38bdf8;
+    color: rgba(var(--blue-color-500), 1);
 }
 
 .dark header .header-items .header-quick-access .header-tools {
-    border-color: rgba(248, 250, 252, .06);
+    border-color: rgba(var(--primary-color-300), .6);
 }
 
 .dark header .header-items .header-quick-access a.github-button:hover {
-    color: #cbd5e1;
-}
-
-.dark .header-items button {
-    color: #fff;
-}
-
-.dark .header-items button:hover {
-    color: #0f182b
+    color: rgba(var(--primary-color-800), 1);
 }
