@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 import { Button } from "@mui/material";
-
-import "../../styles/app.css";
  
 const Home = () => {
   return (

@@ -1,20 +1,9 @@
-import "../../styles/header.css";
-/* import Grid from '@mui/material/Grid'; */
-// import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
-// import { Box } from "@mui/system"; /* For Inline Styles in Box */
-// import { Container } from "@mui/material";
-import { NavLink } from "react-router-dom";
-/* NavLink helps us conditionally add styling attributes to the rendered element */
+import "../../assets/styles/header.css";
 
-/* MUI Joy -- Menu Component */
-import Button from "@mui/joy/Button";
-import Menu from "@mui/joy/Menu";
-import MenuItem from "@mui/joy/MenuItem";
-
-import HeaderLogotype from "../header/HeaderLogotype";
-import HeaderNotificationBar from "../header/HeaderNotificationBar";
-import HeaderLinks from "../header/HeaderLinks";
-import HeaderTools from "../header/HeaderTools";
+import HeaderLogotype from "./header/HeaderLogotype";
+import HeaderNotificationBar from "./header/HeaderNotificationBar";
+import HeaderLinks from "./header/HeaderLinks";
+import HeaderTools from "./header/HeaderTools";
 
 interface HeaderProps {
   template: string;
@@ -32,7 +21,7 @@ const Header = (props: HeaderProps) => {
               type="image/avif"
             />
             <img
-              src="src/assets/medias/background/header-top-background.png"
+              srcSet="./src/assets/medias/background/header-top-background.png"
               alt=""
               className="light-version"
               decoding="async"
@@ -40,11 +29,11 @@ const Header = (props: HeaderProps) => {
           </picture>
           <picture>
             <source
-              srcSet="src/assets/medias/background/header-top-dark-background.avif"
+              srcSet="./src/assets/medias/background/header-top-dark-background.avif"
               type="image/avif"
             />
             <img
-              src="src/assets/medias/background/header-top-dark-background.png"
+              srcSet="./src/assets/medias/background/header-top-dark-background.png"
               alt=""
               className="dark-version"
               decoding="async"

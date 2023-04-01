@@ -1,14 +1,13 @@
 import { Container } from "@mui/material";
 
-import "../../styles/footer.css";
+import "../../assets/styles/footer.css";
 
 const Footer = () => {
   return (
     <footer role="contentinfo">
       <Container className="footer-links">
         <p>
-          ©2023 myReact - Un projet réalisé avec React TypeScript et
-          Vite
+          ©2023 myReact - Un projet réalisé avec React TypeScript et Vite
         </p>
       </Container>
     </footer>

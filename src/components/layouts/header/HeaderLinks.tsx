@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const HeaderLinks = () => {
   return (
     <nav className="header-links">
-      <ul className="space-x-8">
+      <ul>
         <li>
           <NavLink to="/docs">Documentation</NavLink>
         </li>

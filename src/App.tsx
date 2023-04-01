@@ -2,18 +2,18 @@
 import { BrowserRouter } from "react-router-dom";
 
 // Import MUI Base
-import { CssBaseline } from "@mui/material"; /*
-Reset.CSS fourni par MUI */
+import { CssBaseline } from "@mui/material";
+/* CCSBaseline est un Reset.CSS fourni par MUI */
 
 // Import Main Components
-import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./components/MainRoutes";
+import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./components/routes/MainRoutes";
 
 // Import Main Style(s)
-import "../src/styles/app.css";
-import "../src/styles/colors.css";
+import "./assets/styles/app.css";
+import "./assets/styles/colors.css";
 
 // Import Animated Background
-import ParticlesBackground from "./components/animated/ParticlesBackground";
+import ParticlesBackground from "./components/animated-backgrounds/ParticlesBackground";
 
 function App() {
   return (

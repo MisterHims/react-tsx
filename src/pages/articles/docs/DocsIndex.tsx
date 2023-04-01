@@ -1,6 +1,6 @@
 const DocsIndex = () => {
   return (
-    <div>DocsIndex</div>
+    <div className="content">DocsIndex</div>
   )
 }
 

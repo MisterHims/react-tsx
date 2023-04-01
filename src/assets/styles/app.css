@@ -49,7 +49,7 @@ a:hover {
 }
 
 .article-container .article-content {
-  width: calc(100% - 4rem);
+  width: calc(100%  - 20rem);
   /* width: 72rem; // 1152px */
   padding: 2rem 0 0 2rem;
   /* padding-left: 19.5rem; */
@@ -75,6 +75,10 @@ a:hover {
 
 .content {
   max-width: 71.25rem;
+}
+
+.content img {
+  max-width: 350px;
 }
 
 .content h1 {

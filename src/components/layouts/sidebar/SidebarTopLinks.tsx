@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // NOTE 1
 // Une fonction a été ajoutée au component ci-dessous
