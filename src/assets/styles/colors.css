@@ -81,45 +81,6 @@ html {
 
 }
 
-/*#######################  OLD  ###############################*/
-
-html {
-
-
-    --primary-color-light: 249, 254, 255;
-
-    --bg-plain-primary-color: #fff;
-    --bg-light-primary-color: #f1f3f4;
-
-    --bg-plain-secondary-color: #f2f2f2;
-
-    --basic-tonic-color: #308dfc;
-
-    --bg-plain-tonic-color: #0b57d0;
-    --bg-light-tonic-color: #24334d;
-
-    --dark-primary-color: #a9acaa;
-
-    --font-plain-primary-color: #444746;
-    --font-plain-tonic-color: #0842a0;
-
-}
-
-html.dark {
-
-    /* Dark Theme Colors */
-
-    --bg-plain-primary-color: #0f172a;
-    --bg-light-primary-color: #303030;
-
-    --bg-plain-tonic-color: #4285f4;
-    --bg-light-tonic-color: #1c283b;
-
-    --font-plain-primary-color: #444746;
-    --font-plain-tonic-color: #a8c7fa;
-
-}
-
 /* Mouse Color Selection */
 ::selection {
     color: var(--bg-plain-primary-color);
