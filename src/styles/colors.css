@@ -1,4 +1,4 @@
-#root {
+html {
 
     /* Generic Theme Colors */
 
@@ -19,9 +19,9 @@
 
 }
 
-[data-theme="dark"] {
+html.dark {
     /* Dark Theme Colors */
-    --bg-plain-primary-color: #1f1f1f;
+    --bg-plain-primary-color: #0f172a;
     --bg-light-primary-color: #303030;
 
     --bg-plain-toned-color: #4285f4;

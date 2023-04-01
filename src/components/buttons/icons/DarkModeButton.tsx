@@ -14,9 +14,9 @@ const DarkModeButton = () => {
   useEffect(() => {
     // Toggle dark mode class on body element
     if (mode === "dark") {
-      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");
     } else {
-      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
     }
 
     // Save mode to local storage

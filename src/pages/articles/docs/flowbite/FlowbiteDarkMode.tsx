@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const FlowbiteDarkMode = () => {
   return (
-    <div>
+    <div className="content">
       <p>Raté - N'a pas réussi</p>
       <p>
         Le document utilisé pour la mise en place d'un bouton fonctionnel afin

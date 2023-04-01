@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 
-import "../styles/footer.css";
+import "../../styles/footer.css";
 
 const Footer = () => {
   return (

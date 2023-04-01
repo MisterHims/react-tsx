@@ -1,6 +1,8 @@
 const FlowbitePresentation = () => {
   return (
-    <div>FlowbitePresentation</div>
+    <div className="content">
+      FlowbitePresentation
+    </div>
   )
 }
 

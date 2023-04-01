@@ -1,6 +1,6 @@
 const TailwindCSSIntroduction = () => {
   return (
-    <div>Introduction de TailwindCSS</div>
+    <div className="content">Introduction de TailwindCSS</div>
   )
 }
 

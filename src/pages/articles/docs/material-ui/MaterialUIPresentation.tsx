@@ -1,6 +1,6 @@
 const MaterialUI = () => {
   return (
-    <div>MaterialUI</div>
+    <div className="content">MaterialUI</div>
   )
 }
 

@@ -1,4 +1,4 @@
-import "../styles/header.css";
+import "../../styles/header.css";
 /* import Grid from '@mui/material/Grid'; */
 // import Grid2 from "@mui/material/Unstable_Grid2"; // Grid version 2
 // import { Box } from "@mui/system"; /* For Inline Styles in Box */
@@ -11,14 +11,19 @@ import Button from "@mui/joy/Button";
 import Menu from "@mui/joy/Menu";
 import MenuItem from "@mui/joy/MenuItem";
 
-import HeaderLogotype from "./header/HeaderLogotype";
-import HeaderNotificationBar from "./header/HeaderNotificationBar";
-import HeaderLinks from "./header/HeaderLinks";
-import HeaderTools from "./header/HeaderTools";
+import HeaderLogotype from "../header/HeaderLogotype";
+import HeaderNotificationBar from "../header/HeaderNotificationBar";
+import HeaderLinks from "../header/HeaderLinks";
+import HeaderTools from "../header/HeaderTools";
 
-const Header = () => {
+interface HeaderProps {
+  template: string;
+  showNotificationBar: boolean;
+}
+
+const Header = (props: HeaderProps) => {
   return (
-    <header>
+    <header className="flex">
       <div className="header-background">
         <div>
           <picture>
@@ -47,11 +52,11 @@ const Header = () => {
           </picture>
         </div>
       </div>
-      <div className="header-wrapper">
+      <div className={`header-wrapper template-${props.template}`}>
         <div className="header-content">
           <div className="header-items">
             <HeaderLogotype />
-            <HeaderNotificationBar />
+            {props.showNotificationBar && <HeaderNotificationBar />}
             <div className="header-quick-access">
               <HeaderLinks />
               <HeaderTools />

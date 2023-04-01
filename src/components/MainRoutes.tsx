@@ -2,13 +2,13 @@ import { Routes, Route } from "react-router-dom";
 
 /////////// HOME PAGES \\\\\\\\\\\
 
-import HomeTemplate from "../pages/_templates/HomeTemplate";
-import HomePage from "./Home";
+import HomeTemplate from "../pages/_templates/FullWidthTemplates";
+import Home from "../pages/home/Home";
 
 const MainRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomeTemplate><HomePage /></HomeTemplate>} />
+      <Route path="/" element={<HomeTemplate><Home /></HomeTemplate>} />
     </Routes>
   );
 };
@@ -16,7 +16,7 @@ const MainRoutes = () => {
 /////////// EXERCICES PAGES \\\\\\\\\\\
 
 // Import Exercices Template 
-import ExercicesTemplate from "../pages/_templates/ExercicesTemplate";
+import { ExercicesTemplate } from "../pages/_templates/ArticlesTemplates";
 
 // Import Interstitial Exercices 
 import ExercicesIndex from "../pages/articles/exercices/ExercicesIndex";
@@ -25,6 +25,7 @@ import ExercicesIndex from "../pages/articles/exercices/ExercicesIndex";
 import FlowbiteExercice01 from "../pages/articles/exercices/flowbite/FlowbiteExercice01";
 import MaterialUIExercice01 from "../pages/articles/exercices/material-ui/MaterialUIExercice01";
 import MaterialUIExercice02 from "../pages/articles/exercices/material-ui/MaterialUIExercice02";
+import MaterialUIExercice03 from "../pages/articles/exercices/material-ui/MaterialUIExercice03";
 import PostCSSExercice01 from "../pages/articles/exercices/postcss/PostCSSExercice01";
 import TailwindCSSExercice01 from "../pages/articles/exercices/tailwindcss/TailwindCSSExercice01";
 import TypescriptExercice01 from "../pages/articles/exercices/typescript/TypescriptExercice01";
@@ -36,6 +37,7 @@ const ExercicesRoutes = () => {
       <Route path="exercices/flowbite/exercice-01" element={<ExercicesTemplate><FlowbiteExercice01 /></ExercicesTemplate>}/>
       <Route path="exercices/material-ui/exercice-01" element={<ExercicesTemplate><MaterialUIExercice01 /></ExercicesTemplate>}/>
       <Route path="exercices/material-ui/exercice-02" element={<ExercicesTemplate><MaterialUIExercice02 /></ExercicesTemplate>}/>
+      <Route path="exercices/material-ui/exercice-03" element={<ExercicesTemplate><MaterialUIExercice03 /></ExercicesTemplate>}/>
       <Route path="exercices/postcss/exercice-01" element={<ExercicesTemplate><PostCSSExercice01 /></ExercicesTemplate>}/>
       <Route path="exercices/tailwindcss/exercice-01" element={<ExercicesTemplate><TailwindCSSExercice01 /></ExercicesTemplate>}/>
       <Route path="exercices/typescript/exercice-01" element={<ExercicesTemplate><TypescriptExercice01 /></ExercicesTemplate>}/>
@@ -46,7 +48,7 @@ const ExercicesRoutes = () => {
 /////////// DOCS PAGES \\\\\\\\\\\
 
 // Import Docs Template 
-import DocsTemplate from "../pages/_templates/DocsTemplate";
+import { DocsTemplate } from "../pages/_templates/ArticlesTemplates";
 
 // Import Interstitial Docs 
 import DocsIndex from "../pages/articles/docs/DocsIndex";

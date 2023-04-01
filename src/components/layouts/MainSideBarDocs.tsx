@@ -1,8 +1,8 @@
-import SearchBar from "./sidebar/SearchBar";
-import SidebarTopLinks from "./sidebar/SidebarTopLinks";
-import { SideBarDocsLinks } from "./sidebar/SideBarLinks";
+import SearchBar from "../forms-inputs/SearchBar";
+import SidebarTopLinks from "../sidebar/SidebarTopLinks";
+import { SideBarDocsLinks } from "../sidebar/SideBarLinks";
 
-import "../styles/sidebar.css";
+import "../../styles/sidebar.css";
 
 const MainSideBarDocs = () => {
   return (

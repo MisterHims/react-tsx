@@ -4,8 +4,24 @@ tandis que le fichier App.css peut être utilisé pour des styles spécifiques �
 l'interface utilisateur de l' application, tels que des styles de disposition,
 de marges et de rembourrages. */
 
+* {
+  z-index: 20;
+}
 
-#root {width: 100%;}
+body {min-height: 100%;}
+
+#tsparticles {
+  z-index: 19;
+  visibility: hidden;
+}
+
+#tsparticles.active {
+  visibility: visible;
+}
+
+#root {
+  width: 100%;
+}
 
 h1 {
   font-size: 3.2em;
@@ -14,26 +30,74 @@ h1 {
 
 .App {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: var(--bg-plain-primary-color);
-  min-height: 100vh;
 }
 
 a:hover {
   color: #0ea5e9;
 }
 
-/* Full Content */
+/***/
 
-.main-wrapper .full-content {
-  width: 90rem/* 1440px */;
+/* Article Container */
+
+.article-container {
+  height: 100%;
+  width: 90rem; /* 90rem - padding-left - padding-right */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.article-container .article-content {
+  width: calc(100% - 4rem);
+  /* width: 72rem; // 1152px */
+  padding: 2rem 0 0 2rem;
+  /* padding-left: 19.5rem; */
+}
+
+/* Home Container */
+
+.home-container {
+  width: 100%;/* width: calc(90rem - 4rem); /* 90rem - padding = 90rem (1440px) */
+  height: calc(100vh - 4rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-container .article-content {
+  width: calc(100% - 4rem);
+  /* width: 72rem; // 1152px */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* CONTENT */
+
+.content {
+  max-width: 71.25rem;
+}
+
+.content h1 {
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.dark .content h1 {
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.content p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+.dark .content p {
+    color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
 /* Article Content */
-
-.main-wrapper .article-content {
-  width: 72rem/* 1152px */;
-  padding-left: 2rem;
-}
 
 .article-content a {
   font-weight: 500;
@@ -45,33 +109,34 @@ a:hover {
   color: #64748b;
 }
 
-.Home {
-  text-align: center;
+.article-content .content *:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
-.container {
-  position: relative;
-  max-width: 1400px;
-  padding: 40px 30px;
+/* Home Content */
+
+.home-content {
+  width: 50rem /* 800px */;
 }
 
-.mode-switch {
-  font-size: 11px;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
+.home-content .content *:not(:last-child) {
+  margin-bottom: 2.5rem;
 }
 
-.mode-switch:hover {
-  color: #50bbf1;
+#particles-js {
+  width: 100%;
+  height: 100%;
 }
 
-.primary-button {
-  /* default style: black button with white text */
-  background-color: #222;
-  color: #f5f5f5;
+#tsparticles.active {
+  opacity: 0.15;
 }
 
 /* DarkMode Initialization */
+
+.dark {
+  color-scheme: dark;
+}
 
 .dark a:hover {
   color: #38bdf8;
@@ -85,9 +150,12 @@ a:hover {
   color: #64748b
 }
 
-.dark .App {
+.dark body {
   --tw-text-opacity: 1;
   color: rgb(148 163 184/var(--tw-text-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42/var(--tw-bg-opacity));
+  background-color: #0f172a;
+}
+
+.dark #tsparticles.active {
+  opacity: 1;
 }

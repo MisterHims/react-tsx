@@ -2,7 +2,7 @@ import React from 'react'
 
 const PostCSSPresentation = () => {
   return (
-    <div>PostCSSPresentation</div>
+    <div className="content">PostCSSPresentation</div>
   )
 }
 
