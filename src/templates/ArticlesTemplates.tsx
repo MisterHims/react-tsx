@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 import Header from "../layouts/Header";
 import { ArticleContent} from "../layouts/Content";
-import MainSidebarDocs from "../layouts/MainSideBarDocs";
-import MainSidebarExercices from "../layouts/MainSideBarExercices";
+import MainSidebarDocs from "../layouts/sidebar/MainSideBarDocs";
+import MainSidebarExercices from "../layouts/sidebar/MainSideBarExercices";
 
 // Import Style(s)
 import "../assets/styles/templates/articles-template.css";
