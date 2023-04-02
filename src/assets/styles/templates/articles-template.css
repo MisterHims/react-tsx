@@ -38,9 +38,6 @@ du component ArticlesTemplates.tsx qui est composé de :
     color: rgba(var(--primary-color-500), 1);
 }
 
-.article-content .content *:not(:last-child) {
-    margin-bottom: 1.5rem;
-}
 
 /* ## Dark Mode ## */
 
@@ -54,23 +51,27 @@ du component ArticlesTemplates.tsx qui est composé de :
 
 /* ### CONTENT ### */
 
-.content {
+.article-content .content *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.article-content .content {
     max-width: 71.25rem;
     margin: 2rem 0;
 }
 
-.content img {
+.article-content .content img {
     max-width: 350px;
 }
 
-.content h1 {
+.article-content .content h1 {
     font-weight: 800;
     letter-spacing: -0.025em;
     color: rgb(15 23 42);
     color: rgba(var(--primary-color-dark), 1);
 }
 
-.content p {
+.article-content .content p {
     font-size: 1.125rem;
     line-height: 1.75rem;
     /* color: rgb(71 85 105); */
@@ -79,12 +80,12 @@ du component ArticlesTemplates.tsx qui est composé de :
 
 /* ## Dark Mode ## */
 
-.dark .content h1 {
+.dark .article-content .content h1 {
     /* color: rgb(255 255 255); */
     color: rgba(var(--primary-color-light), 1);
 }
 
-.dark .content p {
+.dark .article-content .content p {
     /* color: rgb(148 163 184); */
     color: rgba(var(--primary-color-800), 1);
     ;
