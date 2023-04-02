@@ -1,7 +1,5 @@
 footer {
-    height: 3rem;
     width: 100%;
-    margin-top: 2rem;
     padding: 1rem 0;
     border-color: rgba(var(--primary-color-dark), .1);
     border-top-width: 1px;

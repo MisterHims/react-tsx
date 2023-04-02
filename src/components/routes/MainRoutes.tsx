@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 /////////// HOME PAGE \\\\\\\\\\\
 
-import HomeTemplate from "../../pages/_templates/FullWidthTemplates";
+import { HomeTemplate } from "../../pages/_templates/OneViewTemplates";
 import Home from "../../pages/home/Home";
 
 const MainRoutes = () => {

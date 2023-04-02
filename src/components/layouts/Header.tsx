@@ -1,4 +1,4 @@
-import "../../assets/styles/header.css";
+import "../../assets/styles/layouts/header.css";
 
 import { HeaderBackgroundClassic } from "./header/HeaderBackgrounds";
 import HeaderLogotype from "./header/HeaderLogotype";

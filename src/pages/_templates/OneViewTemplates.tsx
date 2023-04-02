@@ -3,6 +3,9 @@ import Header from "../../components/layouts/Header";
 import { HomeContent } from "../../components/layouts/Content";
 import Footer from "../../components/layouts/Footer";
 
+// Import Animated Background
+import ParticlesBackground from "../../components/animated-backgrounds/ParticlesBackground";
+
 type Props = {
   children: ReactNode;
 };
@@ -15,9 +18,9 @@ const HomeTemplate = ({ children }: Props) => {
       <HomeContent>{children}</HomeContent>
       <Footer />
     </div>
+    <ParticlesBackground />
   </div>
-      
   );
 };
 
-export default HomeTemplate;
+export { HomeTemplate };

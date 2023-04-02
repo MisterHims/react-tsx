@@ -9,24 +9,21 @@ import { CssBaseline } from "@mui/material";
 import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./components/routes/MainRoutes";
 
 // Import Main Style(s)
-import "./assets/styles/app.css";
-import "./assets/styles/colors.css";
+import "./assets/styles/global/app.css";
+import "./assets/styles/global/colors.css";
 
 import { Global, css } from '@emotion/react';
-
-// Import Animated Background
-import ParticlesBackground from "./components/animated-backgrounds/ParticlesBackground";
 
 function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
+      {/* Global est utilisé pour écrasé le background-color natif d'Emotion par du transparent */}
       <Global styles={css` body { background-color: transparent; } `} />
       <div className="App">
         <MainRoutes />
         <DocsRoutes />
         <ExercicesRoutes />
-        <ParticlesBackground />
       </div>
     </BrowserRouter>
   );

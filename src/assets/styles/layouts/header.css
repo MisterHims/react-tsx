@@ -221,3 +221,35 @@ header .header-background div img.dark-version {
 .dark header .header-items .header-quick-access a.github-button:hover {
     color: rgba(var(--primary-color-800), 1);
 }
+
+/* #### MEDIA QUERIES #### */
+
+/* 2XL Breakpoints [2xl] - 1536px */
+@media only screen and (min-width: 1536px) {
+
+}
+
+/* XL Breakpoints [xl] - 1280px */
+@media only screen and (min-width: 1280px) and (max-width: 1535px) {
+
+}
+
+/* Large Breakpoints [lg] - 1024px */
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/* Medium Breakpoints [md] - 768px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+/* Small Breakpoints [sm] - 640px */
+@media only screen /* and (min-width: 640px) */ and (max-width: 767px) {
+    header .header-wrapper.template-home .header-content {
+        padding: 1rem 1rem 0 1rem;
+    }
+    header .header-content .header-items .header-quick-access .header-links {
+        display: none;
+    }
+}
