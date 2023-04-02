@@ -7,7 +7,7 @@ import HeaderLinks from "./header/HeaderLinks";
 import HeaderTools from "./header/HeaderTools";
 
 interface HeaderProps {
-  template: string;
+  template: "home" | "article";
   showNotificationBar: boolean;
 }
 
