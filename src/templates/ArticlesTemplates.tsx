@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
-import Header from "../../components/layouts/Header";
-import { ArticleContent} from "../../components/layouts/Content";
-import MainSidebarDocs from "../../components/layouts/MainSideBarDocs";
-import MainSidebarExercices from "../../components/layouts/MainSideBarExercices";
+import Header from "../layouts/Header";
+import { ArticleContent} from "../layouts/Content";
+import MainSidebarDocs from "../layouts/MainSideBarDocs";
+import MainSidebarExercices from "../layouts/MainSideBarExercices";
 
 // Import Style(s)
-import "../../assets/styles/templates/articles-template.css";
+import "../assets/styles/templates/articles-template.css";
 
 type Props = {
   children: ReactNode;

@@ -1,8 +1,8 @@
 import React from 'react'
-import HeaderTopBackgroundAVIF from "../../../assets/medias/background/header-top-background.avif"
-import HeaderTopBackgroundPNG from "../../../assets/medias/background/header-top-background.png"
-import HeaderTopDarkBackgroundAVIF from "../../../assets/medias/background/header-top-dark-background.avif"
-import HeaderTopDarkBackgroundPNG from "../../../assets/medias/background/header-top-dark-background.png"
+import HeaderTopBackgroundAVIF from "../../assets/medias/background/header-top-background.avif"
+import HeaderTopBackgroundPNG from "../../assets/medias/background/header-top-background.png"
+import HeaderTopDarkBackgroundAVIF from "../../assets/medias/background/header-top-dark-background.avif"
+import HeaderTopDarkBackgroundPNG from "../../assets/medias/background/header-top-dark-background.png"
 
 const HeaderBackgroundClassic = () => {
   return (

@@ -6,7 +6,7 @@ import { CssBaseline } from "@mui/material";
 /* CCSBaseline est un Reset.CSS fourni par MUI */
 
 // Import Main Components
-import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./components/routes/MainRoutes";
+import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./routes/MainRoutes";
 
 // Import Main Style(s)
 import "./assets/styles/global/app.css";

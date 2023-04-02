@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 
 /////////// HOME PAGE \\\\\\\\\\\
 
-import { HomeTemplate } from "../../pages/_templates/OneViewTemplates";
-import Home from "../../pages/home/Home";
+import { HomeTemplate } from "../templates/OneViewTemplates";
+import Home from "../pages/home/Home";
 
 const MainRoutes = () => {
   return (
@@ -16,19 +16,19 @@ const MainRoutes = () => {
 /////////// EXERCICES PAGES \\\\\\\\\\\
 
 // Import Exercices Template 
-import { ExercicesTemplate } from "../../pages/_templates/ArticlesTemplates";
+import { ExercicesTemplate } from "../templates/ArticlesTemplates";
 
 // Import Interstitial Exercices 
-import ExercicesIndex from "../../pages/articles/exercices/ExercicesIndex";
+import ExercicesIndex from "../pages/articles/exercices/ExercicesIndex";
 
 // Import Exercices Files
-import FlowbiteExercice01 from "../../pages/articles/exercices/flowbite/FlowbiteExercice01";
-import MaterialUIExercice01 from "../../pages/articles/exercices/material-ui/MaterialUIExercice01";
-import MaterialUIExercice02 from "../../pages/articles/exercices/material-ui/MaterialUIExercice02";
-import MaterialUIExercice03 from "../../pages/articles/exercices/material-ui/MaterialUIExercice03";
-import PostCSSExercice01 from "../../pages/articles/exercices/postcss/PostCSSExercice01";
-import TailwindCSSExercice01 from "../../pages/articles/exercices/tailwindcss/TailwindCSSExercice01";
-import TypescriptExercice01 from "../../pages/articles/exercices/typescript/TypescriptExercice01";
+import FlowbiteExercice01 from "../pages/articles/exercices/flowbite/FlowbiteExercice01";
+import MaterialUIExercice01 from "../pages/articles/exercices/material-ui/MaterialUIExercice01";
+import MaterialUIExercice02 from "../pages/articles/exercices/material-ui/MaterialUIExercice02";
+import MaterialUIExercice03 from "../pages/articles/exercices/material-ui/MaterialUIExercice03";
+import PostCSSExercice01 from "../pages/articles/exercices/postcss/PostCSSExercice01";
+import TailwindCSSExercice01 from "../pages/articles/exercices/tailwindcss/TailwindCSSExercice01";
+import TypescriptExercice01 from "../pages/articles/exercices/typescript/TypescriptExercice01";
 
 const ExercicesRoutes = () => {
   return (
@@ -48,21 +48,21 @@ const ExercicesRoutes = () => {
 /////////// DOCS PAGES \\\\\\\\\\\
 
 // Import Docs Template 
-import { DocsTemplate } from "../../pages/_templates/ArticlesTemplates";
+import { DocsTemplate } from "../templates/ArticlesTemplates";
 
 // Import Interstitial Docs 
-import DocsIndex from "../../pages/articles/docs/DocsIndex";
+import DocsIndex from "../pages/articles/docs/DocsIndex";
 
 // Import Docs Files
-import ColorsArticle from "../../pages/articles/docs/branding/ColorsArticle";
-import FlowbiteDarkMode from "../../pages/articles/docs/flowbite/FlowbiteDarkMode";
-import MyReactPresentation from "../../pages/articles/docs/myreact/MyReactPresentation";
-import MyReactInstallation from "../../pages/articles/docs/myreact/MyReactInstallation";
-import TypescriptPresentation from "../../pages/articles/docs/typescript/TypescriptPresentation";
-import PostCSSPresentation from "../../pages/articles/docs/postcss/PostCSSPresentation";
-import MaterialUIPresentation from "../../pages/articles/docs/material-ui/MaterialUIPresentation";
-import TailwindCSSPresentation from "../../pages/articles/docs/tailwindcss/TailwindCSSPresentation";
-import FlowbitePresentation from "../../pages/articles/docs/flowbite/FlowbitePresentation";
+import ColorsArticle from "../pages/articles/docs/branding/ColorsArticle";
+import FlowbiteDarkMode from "../pages/articles/docs/flowbite/FlowbiteDarkMode";
+import MyReactPresentation from "../pages/articles/docs/myreact/MyReactPresentation";
+import MyReactInstallation from "../pages/articles/docs/myreact/MyReactInstallation";
+import TypescriptPresentation from "../pages/articles/docs/typescript/TypescriptPresentation";
+import PostCSSPresentation from "../pages/articles/docs/postcss/PostCSSPresentation";
+import MaterialUIPresentation from "../pages/articles/docs/material-ui/MaterialUIPresentation";
+import TailwindCSSPresentation from "../pages/articles/docs/tailwindcss/TailwindCSSPresentation";
+import FlowbitePresentation from "../pages/articles/docs/flowbite/FlowbitePresentation";
 
 const DocsRoutes = () => {
   return (
