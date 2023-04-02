@@ -6,6 +6,10 @@ import Footer from "../../components/layouts/Footer";
 // Import Animated Background
 import ParticlesBackground from "../../components/animated-backgrounds/ParticlesBackground";
 
+// Import Style(s)
+import "../../assets/styles/templates/one-view-template.css";
+
+
 type Props = {
   children: ReactNode;
 };

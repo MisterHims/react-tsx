@@ -175,7 +175,7 @@
     border-color: rgba(var(--primary-color-600), 1);;
 }
 
-/* Sidebar Links - Dark */
+/* ## Dark Mode ## */
 
 .dark .sidebar-content ul.sidebar-links li a {
     color: rgba(var(--primary-color-700), 1);

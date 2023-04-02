@@ -173,7 +173,7 @@ header .header-background div img.dark-version {
     max-width: none;
 }
 
-/* DarkMode Initialization */
+/* ## Dark Mode ## */
 
 .dark .header-background div img.light-version {
     display: none;

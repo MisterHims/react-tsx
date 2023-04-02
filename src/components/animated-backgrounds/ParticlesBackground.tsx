@@ -7,7 +7,6 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 const ParticlesBackground = () => {
-  const location = useLocation();
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine); 
   }, []);

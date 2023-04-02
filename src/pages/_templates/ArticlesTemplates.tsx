@@ -4,6 +4,9 @@ import { ArticleContent} from "../../components/layouts/Content";
 import MainSidebarDocs from "../../components/layouts/MainSideBarDocs";
 import MainSidebarExercices from "../../components/layouts/MainSideBarExercices";
 
+// Import Style(s)
+import "../../assets/styles/templates/articles-template.css";
+
 type Props = {
   children: ReactNode;
 };
