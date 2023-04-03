@@ -15,10 +15,11 @@ de marges et de rembourrages. */
 body {
   min-height: 100%;
   background-color: rgba(var(--primary-color-light), 1);
-}
 
-.App {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  .App {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
 }
 
 /* ## Dark Mode ## */

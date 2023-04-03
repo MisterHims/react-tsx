@@ -21,7 +21,7 @@ footer p {
 
 .dark footer {
     background-color: transparent;
-    border-color: rgba(var(--primary-color-300), .6);
+    border-color: rgba(var(--primary-color-300), 0.6);
     border-top-width: 1px;
 }
 
