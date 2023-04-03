@@ -171,19 +171,29 @@ To do this, we could very well repeat our build:css command lines like before, b
 
 Instead of repeating this operation for each new css file modification, we can automate this process by using a "watch" tool that will monitor our CSS files and automatically run the build command whenever a file is modified. For that, we just need to add `--watch` or just `-w` and that's going to watch for changes.
 
-But we don't need to build:css, we need watch:css so we can just add theses lines
+But we don't need to build:css, we need watch:css so we can just add theses `watch:css` commands:
 
 ```json
 "scripts": {
-  "watch:css:index": "postcss src/styles/global/index.css --dir build/styles/global -w",
-  "watch:css:app": "postcss src/styles/global/app.css --dir build/styles/global -w",
-  "watch:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global -w",
-  "watch:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates -w",
-  "watch:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates -w",
-  "watch:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts -w",
-  "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts -w",
-  "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts -w",
+    "build:css:index": "postcss src/styles/global/index.css --dir build/styles/global",
+    "watch:css:index": "postcss src/styles/global/index.css --dir build/styles/global -w",
+    "build:css:app": "postcss src/styles/global/app.css --dir build/styles/global",
+    "watch:css:app": "postcss src/styles/global/app.css --dir build/styles/global -w",
+    "build:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global",
+    "watch:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global -w",
+    "build:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates",
+    "watch:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates -w",
+    "build:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates",
+    "watch:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates -w",
+    "build:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts",
+    "watch:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts -w",
+    "build:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts",
+    "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts -w",
+    "build:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts",
+    "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts -w",
 }
 ```
+
+
 
 It's done! We have initialized PostCSS.
