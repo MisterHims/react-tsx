@@ -6,6 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:css:index": "postcss src/styles/global/index.css --dir build/styles/global",
+    "watch:css:index": "postcss src/styles/global/index.css --dir build/styles/global -w",
+    "build:css:app": "postcss src/styles/global/app.css --dir build/styles/global",
+    "watch:css:app": "postcss src/styles/global/app.css --dir build/styles/global -w",
+    "build:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global",
+    "watch:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global -w",
+    "build:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates",
+    "watch:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates -w",
+    "build:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates",
+    "watch:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates -w",
+    "build:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts",
+    "watch:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts -w",
+    "build:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts",
+    "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts -w",
+    "build:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts",
+    "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts -w",
+
     "preview": "vite preview"
   },
   "dependencies": {
