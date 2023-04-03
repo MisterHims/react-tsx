@@ -9,8 +9,8 @@ import { CssBaseline } from "@mui/material";
 import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./routes/MainRoutes";
 
 // Import Main Style(s)
-import "./assets/styles/global/app.css";
-import "./assets/styles/global/colors.css";
+import "./styles/global/app.css";
+import "./styles/global/colors.css";
 
 import { Global, css } from '@emotion/react';
 

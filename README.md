@@ -108,7 +108,7 @@ For more clarity in our project, it is important to restructure it according to 
   - App.css into "app.css"
   - main.tsx into "Main.tsx"
 
-## Our structure
+## Our final structure
 
 - The "src/assets" directory for images and other static files  to keep these assets separate from the main source code of the application.
 

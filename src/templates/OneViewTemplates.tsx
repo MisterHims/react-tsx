@@ -7,7 +7,7 @@ import Footer from "../layouts/Footer";
 import ParticlesBackground from "../components/animated-backgrounds/ParticlesBackground";
 
 // Import Style(s)
-import "../assets/styles/templates/one-view-template.css";
+import "../styles/templates/one-view-template.css";
 
 
 type Props = {

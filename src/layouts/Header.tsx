@@ -4,7 +4,7 @@ import HeaderNotificationBar from "./header/HeaderNotificationBar";
 import HeaderLinks from "./header/HeaderLinks";
 import HeaderTools from "./header/HeaderTools";
 
-import "../assets/styles/layouts/header.css";
+import "../styles/layouts/header.css";
 
 interface HeaderProps {
   template: "home" | "article";

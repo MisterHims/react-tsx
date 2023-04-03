@@ -5,7 +5,7 @@ import MainSidebarDocs from "../layouts/sidebar/MainSideBarDocs";
 import MainSidebarExercices from "../layouts/sidebar/MainSideBarExercices";
 
 // Import Style(s)
-import "../assets/styles/templates/articles-template.css";
+import "../styles/templates/articles-template.css";
 
 type Props = {
   children: ReactNode;
