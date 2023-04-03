@@ -2,7 +2,7 @@
 
 ## Introduction
 
-React-TS is my personal React environment to work. It is bootstrapped with Vite and uses Typescript as a programming language.
+React-TS is my personal React environment to work. It's bootstrapped with Vite and uses Typescript as a programming language.
 
 Here is the list of all the dependencies and frameworks used with this environment:
 
@@ -100,7 +100,7 @@ We would normally notice a bold, underlined font
 
 ### Structure rearrangement
 
-For more clarity in our project, it is important to restructure it according to our needs:
+For more clarity in our project, it's important to restructure it according to our needs:
 
 - Create a folder named 'styles' inside the 'src' folder and move all our css files (index.css and app.css)
 
@@ -132,7 +132,7 @@ Ultimately, the structure of a React project may vary depending on each develope
 
 ## PostCSS Initialization
 
-After setting up our desired structure, it is necessary to correctly initialize PostCSS in order to ask it to compile each of our style sheets in their user version.
+After setting up our desired structure, it's necessary to correctly initialize PostCSS in order to ask it to compile each of our style sheets in their user version.
 
 To do this, we must go to our package.json file in order to create a build command for each CSS file to better organize the process of generating our project:
 
@@ -151,15 +151,17 @@ To do this, we must go to our package.json file in order to create a build comma
 
 These instructions are thus clear and well organized. Each build:css command is intended to compile a specific CSS file using PostCSS and place the result in a specified destination folder into the build folder. It's easy to understand which command is for which CSS file.
 
-It is important to add a new command for each new style sheet created, such as future component styles.
+It's important to add a new command for each new style sheet created, such as future component styles.
 
-We can then run the `import 'yarn run build:css` command for each css file to generate the compiled CSS in the build/css directory. If the build/css directory does not exist, it will be created automatically when running the command :
+We can then run the `yarn run build:css` command for each css file to generate the compiled CSS in the build/styles directory. If the build/styles directory does not exist, it will be created automatically when running the command.
+
+We can start by building our index.css file:
 
 ```cli
 yarn run build:css:index
 ```
 
-We must then perform this operation for all the other css files. It is also possible to do this instruction in one go if our file does not contain end-of-line characters incompatible with our operating system (Linux or Windows).
+We must then perform this operation for all the other css files. It's also possible to do this instruction in one go if our file does not contain end-of-line characters incompatible with our operating system (Linux or Windows).
 
 When using PostCSS we want to make sure when we import our CSS, that we importing from the destination wherever we compiling our CSS to that's where whe want to be importing from.
 
