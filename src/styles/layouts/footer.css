@@ -3,10 +3,9 @@ footer {
     padding: 1rem 0;
     border-color: rgba(var(--primary-color-dark), .1);
     border-top-width: 1px;
-}
-
-footer p {
-    color: rgba(var(--primary-color-400), 1)
+    p {
+        color: rgba(var(--primary-color-400), 1);
+    }
 }
 
 .footer-links {
@@ -22,9 +21,7 @@ footer p {
 .dark footer {
     background-color: transparent;
     border-color: rgba(var(--primary-color-300), 0.6);
-    border-top-width: 1px;
-}
-
-.dark footer p {
-    color: rgba(var(--primary-color-500), 1)
+    p {
+        color: rgba(var(--primary-color-500), 1);
+    }
 }

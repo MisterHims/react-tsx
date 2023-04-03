@@ -13,10 +13,9 @@ header .header-wrapper {
 header .header-wrapper.template-home {
     width: 100%;
     border: none;
-}
-
-header .header-wrapper.template-home .header-content {
-    padding: 2rem 2rem 0 2rem;
+    .header-content {
+        padding: 2rem 2rem 0 2rem;
+    }
 }
 
 header .header-wrapper.template-article {
