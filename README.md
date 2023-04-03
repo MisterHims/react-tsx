@@ -189,21 +189,21 @@ But we don't need to build:css, we need watch:css so we can just add theses `wat
 ```json
 "scripts": {
     "build:css:index": "postcss src/styles/global/index.css --dir build/styles/global",
-    "watch:css:index": "postcss src/styles/global/index.css --dir build/styles/global -w",
+    "watch:css:index": "postcss src/styles/global/index.css --dir build/styles/global --watch",
     "build:css:app": "postcss src/styles/global/app.css --dir build/styles/global",
-    "watch:css:app": "postcss src/styles/global/app.css --dir build/styles/global -w",
+    "watch:css:app": "postcss src/styles/global/app.css --dir build/styles/global --watch",
     "build:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global",
-    "watch:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global -w",
+    "watch:css:colors": "postcss src/styles/global/colors.css --dir build/styles/global --watch",
     "build:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates",
-    "watch:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates -w",
+    "watch:css:articles-template": "postcss src/styles/templates/articles-template.css --dir build/styles/templates --watch",
     "build:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates",
-    "watch:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates -w",
+    "watch:css:one-view-template": "postcss src/styles/templates/one-view-template.css --dir build/styles/templates --watch",
     "build:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts",
-    "watch:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts -w",
+    "watch:css:header": "postcss src/styles/layouts/header.css --dir build/styles/layouts --watch",
     "build:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts",
-    "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts -w",
+    "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts --watch",
     "build:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts",
-    "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts -w",
+    "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts --watch",
 }
 ```
 
@@ -276,3 +276,5 @@ module.exports = {
 For using the Syntax highlighting for our css files, we can use the PostCSS Language VSCode plugin then install it this way: <https://github.com/MhMadHamster/vscode-postcss-language/blob/master/README.md>
 
 Note: I failed to use a working ES6 syntax for our postcss.config file. So we stay in a classic syntax.
+
+Nous pouvons maintenant utiliser la commande watch:css pour cha

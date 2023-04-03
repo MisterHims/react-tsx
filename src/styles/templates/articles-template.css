@@ -29,12 +29,10 @@ du component ArticlesTemplates.tsx qui est composé de :
 .article-content a {
     font-weight: 500;
     text-decoration: inherit;
-    /* color: #000; */
     color: rgba(var(--primary-color-dark), 1);
 }
 
 .article-content a:hover {
-    /* color: #64748b; */
     color: rgba(var(--primary-color-500), 1);
 }
 
@@ -74,19 +72,16 @@ du component ArticlesTemplates.tsx qui est composé de :
 .article-content .content p {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    /* color: rgb(71 85 105); */
     color: rgba(var(--primary-color-600), 1);
 }
 
 /* ## Dark Mode ## */
 
 .dark .article-content .content h1 {
-    /* color: rgb(255 255 255); */
     color: rgba(var(--primary-color-light), 1);
 }
 
 .dark .article-content .content p {
-    /* color: rgb(148 163 184); */
     color: rgba(var(--primary-color-800), 1);
     ;
 }
