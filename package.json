@@ -22,7 +22,6 @@
     "watch:css:footer": "postcss src/styles/layouts/footer.css --dir build/styles/layouts -w",
     "build:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts",
     "watch:css:sidebar": "postcss src/styles/layouts/sidebar.css --dir build/styles/layouts -w",
-
     "preview": "vite preview"
   },
   "dependencies": {
