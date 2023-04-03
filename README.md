@@ -262,7 +262,7 @@ module.exports = {
   plugins: [
     require('cssnano')({ preset: 'default', }),
     require('postcss-import'),
-    require('tailwindcss/nesting')(require('postcss-nesting')),
+    require('tailwindcss/nesting')(require('postcss-nested')),
     require('autoprefixer'),
     require('tailwindcss'),
     require('postcss-preset-env')({
