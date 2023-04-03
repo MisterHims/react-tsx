@@ -18,7 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <CssBaseline />
-      {/* Global est utilisé pour écrasé le background-color natif d'Emotion par du transparent */}
+      {/* Global est utilisé pour écraser le background-color natif d'Emotion par du transparent */}
       <Global styles={css` body { background-color: transparent; } `} />
       <div className="App">
         <MainRoutes />
