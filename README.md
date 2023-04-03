@@ -7,7 +7,7 @@ Here is the list of all the dependencies and frameworks used with this environme
 - React
 - React-Dom
 - React-Router-Dom
-- PostCSS
+- PostCSS (postccs and postcss-cli)
 - Autoprefixer
 - Material-UI (@mui/material, @mui/base and @mui/joy)
 - Emotion (@emotion/react and @emotion/styled)
@@ -107,3 +107,21 @@ For more clarity in our project, it is important to restructure it according to 
 - Rename our capitalized files:
   - App.css into "app.css"
   - main.tsx into "Main.tsx"
+
+## Our structure
+
+- The "src/assets" directory for images and other static files  to keep these assets separate from the main source code of the application.
+
+- The "src/components" directory is a place to store the various reusable components that you will use in our application.
+
+- The "src/layouts" directory for headers and footers if we plan to use these elements consistently across all pages in our application.
+
+- The "src/pages" directory contain the components that represent the different pages of our application.
+
+- The "src/routes" directory for routing configuration files to keep routing logic separate from the main application.
+
+- The "src/styles" directory contain all of our application's style files, including the main CSS file.
+
+- The "src/templates" directory for page templates if we plan to reuse similar layouts across multiple pages.
+
+Ultimately, the structure of a React project may vary depending on each developer's preferences and needs, but the one we presented seems to be well thought out and easy to maintain.
