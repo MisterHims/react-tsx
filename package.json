@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:css": "yarn run build:css:tailwindcss && yarn run build:css:index && yarn run build:css:app && yarn run build:css:colors && yarn run build:css:articles-template && yarn run build:css:one-view-template && yarn run build:css:header && yarn run build:css:footer && yarn run build:css:sidebar",
     "build:css:tailwindcss": "postcss postcss src/styles/components/_tailwind.css -o build/styles/components/tailwind.min.css",
     "watch:css:tailwindcss": "postcss src/styles/components/_tailwind.css -o build/styles/components/tailwind.min.css --watch",
     "build:css:index": "postcss src/styles/global/index.css --dir build/styles/global",

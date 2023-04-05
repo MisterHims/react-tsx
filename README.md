@@ -10,10 +10,10 @@ Here is the list of all the dependencies and frameworks used with this environme
 - React-Dom
 - React-Router-Dom
 - PostCSS (postccs and postcss-cli)
-- PostCSS Import (postcss-import)
-- PostCSS Nested (postcss-nested)
-- CSS Nano: plugin for PostCSS (cssnano)
-- Preset ENV: plugin for PostCSS (postcss-preset-env)
+-- PostCSS Import (postcss-import)
+-- PostCSS Nested (postcss-nested)
+-- CSS Nano (cssnano)
+-- Preset ENV (postcss-preset-env)
 - Autoprefixer
 - Material-UI (@mui/material, @mui/base and @mui/joy)
 - Emotion (@emotion/react and @emotion/styled)
@@ -51,22 +51,20 @@ yarn add -D postcss postcss-import postcss-cli postcss-preset-env cssnano autopr
 
 ```
 
-With this command, all our libraries will be executed in sequence. If one of the commands fails, subsequent commands will not be executed.
-
 It's done.
 
 ### PostCSS and TailwindCSS initialization
 
-Create a file named `postcss.config.cjs` at the root of our project then add the following parameters:
+Create a file named `postcss.config.mjs` at the root of our project then add the following parameters:
 
-```cjs
+```mjs
 import tailwindcss from "tailwindcss"
 import autoprefixer from "autoprefixer"
 
 export default {
   plugins: [
-    tailwindcss,
-    autoprefixer,
+    tailwindcss(),
+    autoprefixer(),
   ],
 }
 ```
@@ -77,9 +75,9 @@ Now we can initialize our TailwindCSS with our project:
 npx tailwindcss init
 ```
 
-If during this process the file named `tailwind.config.cjs` has not been added, then create this new file at the project root and add the following parameters:
+If during this process the file named `tailwind.config.mjs` has not been added, then create this new file at the project root and add the following parameters:
 
-```cjs
+```mjs
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -92,15 +90,13 @@ module.exports = {
 }
 ```
 
-Then add the Tailwind directives to our `index.css`:
+Then temporarily add the Tailwind directives to our `index.css`:
 
 ```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
-
-> Note: It may be more relevant to use `App.css` instead.
 
 In order to check the proper functioning of our CSS preprocessor and Tailwind, we can add the following HTML code to our `App.tsx`:
 
@@ -110,7 +106,7 @@ In order to check the proper functioning of our CSS preprocessor and Tailwind, w
   </h1>
 ```
 
-We would normally notice a bold, underlined font
+We would normally notice a bold, underlined font.
 
 ### Structure rearrangement
 
@@ -218,9 +214,9 @@ It's a PostCSS plugin which we can add to our build process, to ensure that the 
 
 We have already previously installed CSSNano (preferably in dev mode) and we will see how to initialize it.
 
-Then, we need to configure cssnano by editing the postcss.config.cjs file in the root of our project. This should contain cssnano as well as any other plugins that we might want for our project.
+Then, we need to configure cssnano by editing the postcss.config.mjs file in the root of our project. This should contain cssnano as well as any other plugins that we might want for our project.
 
-```cjs
+```mjs
 module.exports = {
   plugins: [
     require('cssnano')({ preset: 'default', }),
@@ -255,17 +251,24 @@ Then, we just need to import our tailwind.min.css into our index.css file with:
 
 PostCSS Preset Env allows us to convert modern CSS into something most browsers can understand, determining the polyfills we need based on our targeted browsers or runtimes.
 
-In our configuration file, we choose to enables the Stage 1 features that is supported by all browsers and support nesting codes. We are also adding support for nested tailwind mode to make it work with Preset Env.
+In our configuration file, we choose to enables the default features that is supported by all browsers and support nesting codes. We are also adding support for nested tailwind mode to make it work with Preset Env.
 
-```cjs
-module.exports = {
+```mjs
+import postcssImport from 'postcss-import';
+import cssnano from 'cssnano';
+import postcssNested from 'postcss-nested';
+import tailwindcss from 'tailwindcss';
+import autoprefixer from 'autoprefixer';
+import postcssPresetEnv from 'postcss-preset-env';
+
+export default {
   plugins: [
-    require('cssnano')({ preset: 'default', }),
-    require('postcss-import'),
-    require('tailwindcss/nesting')(require('postcss-nested')),
-    require('autoprefixer'),
-    require('tailwindcss'),
-    require('postcss-preset-env')({
+    postcssImport(),
+    cssnano({ preset: 'default' }),
+    tailwindcss({ config: './tailwind.config.cjs' }),
+    postcssNested(),
+    autoprefixer(),
+    postcssPresetEnv({
       features: {
         'nesting-rules': false
       }
@@ -276,6 +279,4 @@ module.exports = {
 
 For using the Syntax highlighting for our css files, we can use the PostCSS Language VSCode plugin then install it this way: <https://github.com/MhMadHamster/vscode-postcss-language/blob/master/README.md>
 
-Note: I failed to use a working ES6 syntax for our postcss.config file. So we stay in a classic syntax.
-
-Nous pouvons maintenant utiliser la commande watch:css pour cha
+We can now use the watch:css command to render our stylesheets in real time.

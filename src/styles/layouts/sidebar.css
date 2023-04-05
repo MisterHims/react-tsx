@@ -2,8 +2,7 @@
 
 .article-wrapper .sidebar {
     height: calc(100vh - 4rem);
-    /* 100vh - 4vh (header) - 0.05rem (native micro-border browser) */
-    width: 20rem /* 320px */;
+    width: 20rem;
     max-width: 20rem /* 320px */;
     display: flex;
     flex-direction: column;
