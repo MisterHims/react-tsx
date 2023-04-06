@@ -62,6 +62,7 @@ import TypescriptPresentation from "../pages/articles/docs/typescript/Typescript
 import PostCSSPresentation from "../pages/articles/docs/postcss/PostCSSPresentation";
 import PostCSSUtilities from "../pages/articles/docs/postcss/PostCSSUtilities";
 import MaterialUIPresentation from "../pages/articles/docs/material-ui/MaterialUIPresentation";
+import MaterialUITypography from "../pages/articles/docs/material-ui/MaterialUITypography";
 import TailwindCSSPresentation from "../pages/articles/docs/tailwindcss/TailwindCSSPresentation";
 import FlowbitePresentation from "../pages/articles/docs/flowbite/FlowbitePresentation";
 
@@ -77,6 +78,7 @@ const DocsRoutes = () => {
       <Route path="docs/postcss/presentation" element={<DocsTemplate><PostCSSPresentation /></DocsTemplate>}/>
       <Route path="docs/postcss/utilities" element={<DocsTemplate><PostCSSUtilities /></DocsTemplate>}/>
       <Route path="docs/material-ui/presentation" element={<DocsTemplate><MaterialUIPresentation /></DocsTemplate>}/>
+      <Route path="docs/material-ui/typographie" element={<DocsTemplate><MaterialUITypography /></DocsTemplate>}/>
       <Route path="docs/tailwindcss/presentation" element={<DocsTemplate><TailwindCSSPresentation /></DocsTemplate>}/>
       <Route path="docs/flowbite/presentation" element={<DocsTemplate><FlowbitePresentation /></DocsTemplate>}/>
     </Routes>

@@ -61,6 +61,11 @@ const SideBarDocsLinks = () => {
               Présentation
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/docs/material-ui/typographie">
+              Typographie
+            </NavLink>
+          </li>
         </ul>
       </li>
       <li>

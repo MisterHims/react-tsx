@@ -70,9 +70,9 @@ du component ArticlesTemplates.tsx qui est composé de :
 }
 
 .article-content .content p {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    color: rgba(var(--primary-color-600), 1);
+    /* font-size: 1.125rem; */
+    /* line-height: 1.75rem; */
+    /* color: rgba(var(--primary-color-600), 1); */
 }
 
 /* ## Dark Mode ## */
@@ -82,8 +82,7 @@ du component ArticlesTemplates.tsx qui est composé de :
 }
 
 .dark .article-content .content p {
-    color: rgba(var(--primary-color-800), 1);
-    ;
+    /* color: rgba(var(--primary-color-800), 1); */
 }
 
 /* #### MEDIA QUERIES #### */
