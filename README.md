@@ -6,23 +6,23 @@ React-TS is my personal React environment to work. It's bootstrapped with Vite a
 
 Here is the list of all the dependencies and frameworks used with this environment:
 
-- React
-- React-Dom
-- React-Router-Dom
-- Concurrently (concurrently)
-- PostCSS (postccs and postcss-cli)
--- PostCSS Import (postcss-import)
--- PostCSS Utilities (postcss-utilities)
--- PostCSS Nested (postcss-nested)
--- CSS Nano (cssnano)
--- Preset ENV (postcss-preset-env)
--- PostCSS Mixins (postcss-mixins)
--- PostCSS Variables (postcss-simple-vars)
-- Autoprefixer
-- Material-UI (@mui/material, @mui/base and @mui/joy)
-- Emotion (@emotion/react and @emotion/styled)
-- TailwindCSS
-- Flowbite
+* React
+* React-Dom
+* React-Router-Dom
+* Concurrently (concurrently)
+* PostCSS (postccs and postcss-cli) :
+  * PostCSS Import (postcss-import)
+  * PostCSS Utilities (postcss-utilities)
+  * PostCSS Nested (postcss-nested)
+  * CSS Nano (cssnano)
+  * Preset ENV (postcss-preset-env)
+  * PostCSS Mixins (postcss-mixins)
+  * PostCSS Variables (postcss-simple-vars)
+* Autoprefixer
+* Material-UI (@mui/material, @mui/base and @mui/joy)
+* Emotion (@emotion/react and @emotion/styled)
+* TailwindCSS
+* Flowbite
 
 ### Base Installation
 
