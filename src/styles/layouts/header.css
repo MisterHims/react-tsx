@@ -1,3 +1,5 @@
+
+
 /* HEADER BASE */
 
 header .header-wrapper {
@@ -101,10 +103,12 @@ header .header-items .header-quick-access {
     position: relative;
     a {
         color: rgba(var(--primary-color-800), 1);
-    }
-    a:hover {
+
+        &:hover {
         color: rgba(var(--blue-color-800), 1);
+        }
     }
+    
     nav {
         color: rgba(var(--primary-color-300), 1);
         font-size: .875rem;

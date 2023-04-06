@@ -9,11 +9,15 @@ Here is the list of all the dependencies and frameworks used with this environme
 - React
 - React-Dom
 - React-Router-Dom
+- Concurrently (concurrently)
 - PostCSS (postccs and postcss-cli)
 -- PostCSS Import (postcss-import)
+-- PostCSS Utilities (postcss-utilities)
 -- PostCSS Nested (postcss-nested)
 -- CSS Nano (cssnano)
 -- Preset ENV (postcss-preset-env)
+-- PostCSS Mixins (postcss-mixins)
+-- PostCSS Variables (postcss-simple-vars)
 - Autoprefixer
 - Material-UI (@mui/material, @mui/base and @mui/joy)
 - Emotion (@emotion/react and @emotion/styled)
@@ -47,7 +51,7 @@ yarn add react react-dom react-router-dom react-particles @mui/material @mui/bas
 And in dev mode:
 
 ```cli
-yarn add -D postcss postcss-import postcss-cli postcss-preset-env cssnano autoprefixer tailwindcss @emotion/react @emotion/styled @types/react @types/react-dom @vitejs/plugin-react postcss-import postcss-nested
+yarn add -D postcss postcss-import postcss-cli postcss-preset-env cssnano autoprefixer tailwindcss @emotion/react @emotion/styled @types/react @types/react-dom @vitejs/plugin-react postcss-import postcss-nested postcss-utilities postcss-mixins postcss-simple-vars
 
 ```
 

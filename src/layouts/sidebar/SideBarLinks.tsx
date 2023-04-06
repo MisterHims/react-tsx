@@ -46,6 +46,11 @@ const SideBarDocsLinks = () => {
               Présentation
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/docs/postcss/utilities">
+              PostCSS Utilities
+            </NavLink>
+          </li>
         </ul>
       </li>
       <li>
