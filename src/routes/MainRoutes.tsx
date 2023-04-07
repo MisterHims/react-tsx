@@ -58,6 +58,7 @@ import ColorsArticle from "../pages/articles/docs/branding/ColorsArticle";
 import FlowbiteDarkMode from "../pages/articles/docs/flowbite/FlowbiteDarkMode";
 import MyReactPresentation from "../pages/articles/docs/myreact/MyReactPresentation";
 import MyReactInstallation from "../pages/articles/docs/myreact/MyReactInstallation";
+import MyReactStructure from "../pages/articles/docs/myreact/MyReactStructure";
 import TypescriptPresentation from "../pages/articles/docs/typescript/TypescriptPresentation";
 import PostCSSPresentation from "../pages/articles/docs/postcss/PostCSSPresentation";
 import PostCSSUtilities from "../pages/articles/docs/postcss/PostCSSUtilities";
@@ -74,6 +75,7 @@ const DocsRoutes = () => {
       <Route path="docs/myreact/presentation" element={<DocsTemplate><MyReactPresentation /></DocsTemplate>}/>
       <Route path="docs/dark-mode-with-flowbite" element={<DocsTemplate><FlowbiteDarkMode /></DocsTemplate>}/>
       <Route path="docs/myreact/installation" element={<DocsTemplate><MyReactInstallation /></DocsTemplate>}/>
+      <Route path="docs/myreact/structure" element={<DocsTemplate><MyReactStructure /></DocsTemplate>}/>
       <Route path="docs/typescript/presentation" element={<DocsTemplate><TypescriptPresentation /></DocsTemplate>}/>
       <Route path="docs/postcss/presentation" element={<DocsTemplate><PostCSSPresentation /></DocsTemplate>}/>
       <Route path="docs/postcss/utilities" element={<DocsTemplate><PostCSSUtilities /></DocsTemplate>}/>

@@ -4,7 +4,7 @@ const SideBarDocsLinks = () => {
   return (
     <ul className="sidebar-links">
       <li>
-        <h5>Get started</h5>
+        <h5>My React App</h5>
         <ul>
           <li>
             <NavLink to="/docs/myreact/presentation">
@@ -14,6 +14,11 @@ const SideBarDocsLinks = () => {
           <li>
             <NavLink to="/docs/myreact/installation">
               Installation
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/docs/myreact/structure">
+              Structure
             </NavLink>
           </li>
         </ul>
