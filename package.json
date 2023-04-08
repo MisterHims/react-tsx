@@ -30,15 +30,16 @@
   },
   "dependencies": {
     "@mui/base": "^5.0.0-alpha.123",
+    "@mui/core": "^5.0.0-alpha.54",
     "@mui/joy": "^5.0.0-alpha.73",
     "@mui/material": "^5.11.15",
     "@mui/styles": "^5.11.16",
+    "clsx": "^1.2.1",
     "flowbite": "^1.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.10.0",
-    "remove": "^0.1.5",
     "tsparticles": "^2.9.3"
   },
   "devDependencies": {

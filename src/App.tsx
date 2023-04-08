@@ -1,3 +1,10 @@
+import MuiClassNameSetup from "./components/utils/styling-functions/MuiClassNameSetup";
+// ...other component imports
+
+// My Theme
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './components/utils/theme-provider/Theme';
+
 // Import Router
 import { BrowserRouter } from "react-router-dom";
 
@@ -9,22 +16,25 @@ import { CssBaseline } from "@mui/material";
 import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./routes/MainRoutes";
 
 // Import Main Style(s)
-import "./styles/global/app.css";
-import "./styles/global/colors.css";
+import "../build/styles/global/app.css";
+import "../build/styles/global/colors.css";
 
 import { Global, css } from '@emotion/react';
 
 function App() {
   return (
     <BrowserRouter>
+      <MuiClassNameSetup />
       <CssBaseline />
       {/* Global est utilisé pour écraser le background-color natif d'Emotion par du transparent */}
       <Global styles={css` body { background-color: transparent; } `} />
-      <div className="App">
-        <MainRoutes />
-        <DocsRoutes />
-        <ExercicesRoutes />
-      </div>
+      <ThemeProvider theme={theme}>
+        <div className="App">
+          <MainRoutes />
+          <DocsRoutes />
+          <ExercicesRoutes />
+        </div>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

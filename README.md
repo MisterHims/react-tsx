@@ -10,6 +10,7 @@ Here is the list of all the dependencies and frameworks used with this environme
 * React-Dom
 * React-Router-Dom
 * Concurrently (concurrently)
+* clsx (clsx)
 * PostCSS (postccs and postcss-cli) :
   * PostCSS Import (postcss-import)
   * PostCSS Utilities (postcss-utilities)
@@ -19,7 +20,7 @@ Here is the list of all the dependencies and frameworks used with this environme
   * PostCSS Mixins (postcss-mixins)
   * PostCSS Variables (postcss-simple-vars)
 * Autoprefixer
-* Material-UI (@mui/material, @mui/base, @mui/styles and @mui/joy)
+* Material-UI (@mui/core, @mui/material, @mui/base, @mui/styles and @mui/joy)
 * Emotion (@emotion/react and @emotion/styled)
 * TailwindCSS
 * Flowbite
@@ -45,7 +46,7 @@ cd react-ts
 We can now install all our libraries:
 
 ```cli
-yarn add react react-dom react-router-dom react-particles @mui/material @mui/base @mui/styles @mui/joy flowbite tsparticles
+yarn add react react-dom react-router-dom react-particles @mui/material clsx @mui/core @mui/base @mui/styles @mui/joy flowbite tsparticles
 ```
 
 And in dev mode:

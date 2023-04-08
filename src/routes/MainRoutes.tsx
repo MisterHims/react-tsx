@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 /////////// HOME PAGE \\\\\\\\\\\
 
-import { HomeTemplate } from "../templates/OneViewTemplates";
+import { HomeTemplate } from "../components/templates/OneViewTemplates";
 import Home from "../pages/home/Home";
 
 const MainRoutes = () => {
@@ -16,7 +16,7 @@ const MainRoutes = () => {
 /////////// EXERCICES PAGES \\\\\\\\\\\
 
 // Import Exercices Template 
-import { ExercicesTemplate } from "../templates/ArticlesTemplates";
+import { ExercicesTemplate } from "../components/templates/ArticlesTemplates";
 
 // Import Interstitial Exercices 
 import ExercicesIndex from "../pages/articles/exercices/ExercicesIndex";
@@ -48,7 +48,7 @@ const ExercicesRoutes = () => {
 /////////// DOCS PAGES \\\\\\\\\\\
 
 // Import Docs Template 
-import { DocsTemplate } from "../templates/ArticlesTemplates";
+import { DocsTemplate } from "../components/templates/ArticlesTemplates";
 
 // Import Interstitial Docs 
 import DocsIndex from "../pages/articles/docs/DocsIndex";
@@ -59,6 +59,7 @@ import FlowbiteDarkMode from "../pages/articles/docs/flowbite/FlowbiteDarkMode";
 import MyReactPresentation from "../pages/articles/docs/myreact/MyReactPresentation";
 import MyReactInstallation from "../pages/articles/docs/myreact/MyReactInstallation";
 import MyReactStructure from "../pages/articles/docs/myreact/MyReactStructure";
+import MyReactPersonnalisation from "../pages/articles/docs/myreact/MyReactPersonnalisation";
 import TypescriptPresentation from "../pages/articles/docs/typescript/TypescriptPresentation";
 import PostCSSPresentation from "../pages/articles/docs/postcss/PostCSSPresentation";
 import PostCSSUtilities from "../pages/articles/docs/postcss/PostCSSUtilities";
@@ -76,6 +77,7 @@ const DocsRoutes = () => {
       <Route path="docs/dark-mode-with-flowbite" element={<DocsTemplate><FlowbiteDarkMode /></DocsTemplate>}/>
       <Route path="docs/myreact/installation" element={<DocsTemplate><MyReactInstallation /></DocsTemplate>}/>
       <Route path="docs/myreact/structure" element={<DocsTemplate><MyReactStructure /></DocsTemplate>}/>
+      <Route path="docs/myreact/personnalisation" element={<DocsTemplate><MyReactPersonnalisation /></DocsTemplate>}/>
       <Route path="docs/typescript/presentation" element={<DocsTemplate><TypescriptPresentation /></DocsTemplate>}/>
       <Route path="docs/postcss/presentation" element={<DocsTemplate><PostCSSPresentation /></DocsTemplate>}/>
       <Route path="docs/postcss/utilities" element={<DocsTemplate><PostCSSUtilities /></DocsTemplate>}/>

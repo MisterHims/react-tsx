@@ -21,6 +21,11 @@ const SideBarDocsLinks = () => {
               Structure
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/docs/myreact/personnalisation">
+              Personnalisation
+            </NavLink>
+          </li>
         </ul>
       </li>
       <li>

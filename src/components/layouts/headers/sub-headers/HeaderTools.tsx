@@ -1,5 +1,5 @@
-import DarkModeButton from "../../components/buttons/DarkModeButton";
-import GitHubButton from "../../components/buttons/GitHubButton";
+import DarkModeButton from "../../../utils/icon-button/DarkModeButton";
+import GitHubButton from "../../../utils/icon-button/GitHubButton";
 
 const HeaderTools = () => {
   return (

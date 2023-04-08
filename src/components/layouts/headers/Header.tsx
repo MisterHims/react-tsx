@@ -1,10 +1,10 @@
-import { HeaderBackgroundClassic } from "./header/HeaderBackgrounds";
-import HeaderLogotype from "./header/HeaderLogotype";
-import HeaderNotificationBar from "./header/HeaderNotificationBar";
-import HeaderLinks from "./header/HeaderLinks";
-import HeaderTools from "./header/HeaderTools";
+import { HeaderBackgroundClassic } from "./sub-headers/HeaderBackgrounds";
+import HeaderLogotype from "./sub-headers/HeaderLogotype";
+import HeaderNotificationBar from "./sub-headers/HeaderNotificationBar";
+import HeaderLinks from "./sub-headers/HeaderLinks";
+import HeaderTools from "./sub-headers/HeaderTools";
 
-import "../styles/layouts/header.css";
+import "../../../../build/styles/layouts/header.css";
 
 interface HeaderProps {
   template: "home" | "article";

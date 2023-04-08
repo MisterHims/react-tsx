@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
-import Header from "../layouts/Header";
-import { HomeContent } from "../layouts/Content";
-import Footer from "../layouts/Footer";
+import Header from "../layouts/headers/Header";
+import { HomeContent } from "../layouts/contents/Content";
+import Footer from "../layouts/footers/Footer";
 
 // Import Animated Background
-import ParticlesBackground from "../components/animated-backgrounds/ParticlesBackground";
+import ParticlesBackground from "../utils/backgrounds/ParticlesBackground";
 
 // Import Style(s)
-import "../styles/templates/one-view-template.css";
+import "../../../build/styles/templates/one-view-template.css";
 
 
 type Props = {
