@@ -13,7 +13,7 @@ import { CssBaseline } from "@mui/material";
 /* CCSBaseline est un Reset.CSS fourni par MUI */
 
 // Import Main Components
-import MainRoutes, { DocsRoutes, ExercicesRoutes } from "./routes/MainRoutes";
+import MainRoutes from "./routes/MainRoutes";
 
 // Import Main Style(s)
 import "../build/styles/global/app.css";
@@ -31,8 +31,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <div className="App">
           <MainRoutes />
-          <DocsRoutes />
-          <ExercicesRoutes />
         </div>
       </ThemeProvider>
     </BrowserRouter>

@@ -11,9 +11,7 @@ const Home = () => {
         <p>
           Utilisons-là à bon escient et réussissons là où d'autres ont échoués. Et ne jamais oublier que c'est en tombant qu'on apprend à se relever.
         </p>
-        <QxButton variant="outlined" size="small">
-          Outlined Button
-        </QxButton>
+        <QxButton variant="outlined" size="small"> Outlined Button </QxButton>
         <Button variant="contained" component={Link} to="/docs" color="primary" size="large">
           MUI Button
         </Button>

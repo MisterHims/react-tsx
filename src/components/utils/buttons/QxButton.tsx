@@ -1,6 +1,9 @@
 import { styled } from '@mui/system';
 import ButtonUnstyled from '@mui/core/ButtonUnstyled';
 import { Theme } from '@mui/material/styles';
+import { To } from 'react-router-dom';
+import { ComponentType } from 'react';
+import LinkWrapper from '../styling-functions/LinkWrapper';
 
 interface QxButtonProps {
   theme?: Theme;
@@ -9,11 +12,13 @@ interface QxButtonProps {
   size?: 'small' | 'medium' | 'large';
   disabled?: boolean;
   children?: React.ReactNode;
+  to?: To;
+  component?: React.ElementType;
 }
 
 const QxButtonRoot = styled(ButtonUnstyled, {
   shouldForwardProp: (prop) => prop !== 'color',
-})<QxButtonProps>(({ theme, variant, size, color }) => ({
+})<QxButtonProps>(({ theme, variant, size, color, component }) => ({
   // Styles communs
   color: variant === 'contained' ? theme.palette.common.white : theme.palette[color!].main,
   borderRadius: theme.shape.borderRadius,
@@ -84,11 +89,12 @@ const QxButton = (props: QxButtonProps) => {
       variant={variant}
       size={size}
       color={color}
-      disableRipple
-      disableTouchRipple
-      {...other}
+      to="/" // Ajout de la prop to
+      component={props.to ? LinkWrapper : 'button'} // Passer la prop "component" à QxButtonRoot
+      {...other} // Passer toutes les autres propriétés à QxButtonRoot
     />
   );
 };
+
 
 export default QxButton;
