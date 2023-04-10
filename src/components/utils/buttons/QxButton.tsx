@@ -2,8 +2,21 @@ import { styled } from '@mui/system';
 import ButtonUnstyled from '@mui/core/ButtonUnstyled';
 import { Theme } from '@mui/material/styles';
 import { To } from 'react-router-dom';
-import { ComponentType } from 'react';
-import LinkWrapper from '../styling-functions/LinkWrapper';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { LinkProps } from 'react-router-dom';
+
+interface LinkWrapperProps extends LinkProps {
+  ownerState?: any;
+}
+
+const LinkWrapper = React.forwardRef(function LinkWrapper(
+  props: LinkWrapperProps,
+  ref: React.Ref<HTMLAnchorElement>
+) {
+  const { ownerState, ...other } = props;
+  return <Link {...other} ref={ref} />;
+});
 
 interface QxButtonProps {
   theme?: Theme;
@@ -29,7 +42,6 @@ const QxButtonRoot = styled(ButtonUnstyled, {
 
   // Variants
   ...(variant === 'outlined' && {
-    color: theme.palette[color!].main,
     borderColor: theme.palette[color!].main,
     borderWidth: 2,
     backgroundColor: 'transparent',
@@ -52,11 +64,12 @@ const QxButtonRoot = styled(ButtonUnstyled, {
   ...(variant === 'text' && {
     padding: 0,
     color: theme.palette[color!].main,
+    backgroundColor: theme.palette.background.paper,
     '&:hover': {
       backgroundColor: theme.palette.action.hover,
       // Reset on touch devices, it doesn't add specificity
       '@media (hover: none)': {
-        backgroundColor: 'transparent',
+        backgroundColor: theme.palette
       },
     },
   }),
@@ -90,11 +103,10 @@ const QxButton = (props: QxButtonProps) => {
       size={size}
       color={color}
       to="/" // Ajout de la prop to
-      component={props.to ? LinkWrapper : 'button'} // Passer la prop "component" à QxButtonRoot
+      component={LinkWrapper} // Passer la prop "component" à QxButtonRoot
       {...other} // Passer toutes les autres propriétés à QxButtonRoot
     />
   );
 };
-
 
 export default QxButton;

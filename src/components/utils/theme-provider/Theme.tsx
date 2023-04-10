@@ -1,3 +1,6 @@
+// Attention, le theme MUI Base ne semble pas fonctionné
+// avec MUI Joy. lol
+
 import { createTheme } from '@mui/material/styles';
 import { blue, red } from '@mui/material/colors';
 
@@ -49,9 +52,10 @@ const theme = createTheme({
       ],
     },
   },
-    typography: {
+  typography: {
     // Ajoutez les propriétés de typographie personnalisées ici
     fontWeightBold: 700,
+    fontSize: 14,
   },
   shape: {
     // Ajoutez les propriétés de forme personnalisées ici

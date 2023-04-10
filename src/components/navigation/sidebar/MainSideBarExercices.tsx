@@ -1,4 +1,4 @@
-import SearchBar from "../../forms-inputs/SearchBar";
+import SearchBar from "../search/SearchBar";
 import SidebarTopLinks from "./SidebarTopLinks";
 import { SideBarExercicesLinks } from "./SideBarLinks";
 
